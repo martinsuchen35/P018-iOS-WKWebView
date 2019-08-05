@@ -16,9 +16,12 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView = WKWebView(frame: CGRect(x: 10, y: 10, width: view.frame.width - 20, height: view.frame.height / 2))
+        //webView = WKWebView(frame: CGRect(x: 10, y: 10, width: view.frame.width - 20, height: view.frame.height / 2))
+        webView = WKWebView(frame: CGRect(x: 10, y: 10, width: view.frame.width - 20, height: view.frame.height - 50))
         
-        let url = URL(string: "https://www.google.com")
+        //let url = URL(string: "https://www.google.com")
+        //let url = URL(string: "https://codepen.io/cerwin/full/xoepeL")
+        let url = URL(string: "http://ah-cerwin.dhcp.mathworks.com:3333")
         let request = URLRequest(url: url!)
         
         self.view.addSubview(webView)
