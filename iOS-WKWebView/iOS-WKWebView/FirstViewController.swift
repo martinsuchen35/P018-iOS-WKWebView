@@ -21,7 +21,8 @@ class FirstViewController: UIViewController {
         
         //let url = URL(string: "https://www.google.com")
         //let url = URL(string: "https://codepen.io/cerwin/full/xoepeL")
-        let url = URL(string: "https://javascript.info/keyboard-events")
+        //let url = URL(string: "https://javascript.info/keyboard-events")
+        let url = URL(string: "https://www.whatismybrowser.com/detect/what-is-my-user-agent")
         let request = URLRequest(url: url!)
         
         self.view.addSubview(webView)
