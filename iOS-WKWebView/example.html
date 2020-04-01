@@ -63,6 +63,8 @@
             window.onload = function() {
                 document.getElementById("user_agent").innerText = navigator.userAgent;
                 document.getElementById("status").innerText = "Start Loading ...";
+                
+                document.getElementById("editor").focus();
 
                 window.webkit.messageHandlers.ChenBridge.postMessage('GET_VARIABLES');
             };

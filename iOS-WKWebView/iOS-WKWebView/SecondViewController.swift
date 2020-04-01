@@ -28,6 +28,8 @@ class SecondViewController: UIViewController, WKUIDelegate {
         let url = URL(fileURLWithPath: path!)
         let request = URLRequest(url: url)
         webView.load(request)
+        
+        webView.becomeFirstResponder()
     }
 
 }
